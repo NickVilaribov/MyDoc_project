@@ -1,0 +1,31 @@
+
+// MODAL WINDOW
+.modal
+	&__overlay
+		opacity: 0
+		visibility: hidden
+		position: fixed
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		cursor: pointer
+		z-index: 100
+		background: rgba(0,0,0,0.8)
+		transition: all 0.4s ease
+	&__wrapper
+		visibility: hidden
+		opacity: 0
+		z-index: 101
+		position: fixed
+		background-clip: padding-box
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: all 0.4s ease
+	&__close
+		position: absolute
+		top: 2rem
+		right: 3rem
+
+

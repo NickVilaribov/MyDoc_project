@@ -1,0 +1,263 @@
+/* HOVERS */
+
+//hover font-color
+
+.h-fc
+	transition: all 0.3s ease
+	&-1
+		&:hover, &:focus, &:active, &.is-active
+			color: $font1
+			// a, span, i
+			// 	color: $font1			
+	&-2
+		&:hover, &:focus, &:active, &.is-active
+			color: $font2
+			// a, span, i
+			// 	color: $font2					
+	&-3
+		&:hover, &:focus, &:active, &.is-active
+			color: $font3
+			// a, span, i
+			// 	color: $font3						 
+	&-acc-1
+		&:hover, &:focus, &:active, &.is-active
+			color: $accent1
+			a, span, i
+				@extend .h-fc
+				color: $accent1
+			&:before
+				@extend .h-fc
+				color: $accent1					
+	&-acc-2
+		&:hover, &:focus, &:active, &.is-active
+			color: $accent2
+			// a, span, i
+			// 	color: $accent2				
+	&-acc-3
+		&:hover, &:focus, &:active, &.is-active
+			color: $accent3
+			// a, span, i
+			// 	color: $accent3				
+	&-wh
+		&:hover, &:focus, &:active, &.is-active
+			color: $white
+			// a, span, i
+			// 	color: $white				
+
+//hover background color
+.h-bgc
+	transition: all 0.3s ease
+	&:hover, &:focus, &:active, &.is-active
+		transition: all 0.3s ease
+	&-1
+		&:hover, &:focus, &:active, &.is-active
+			background-color: $font1
+	&-2
+		&:hover, &:focus, &:active, &.is-active
+			background-color: $font2
+	&-3
+		&:hover, &:focus, &:active, &.is-active
+			background-color: $font3
+	&-acc-1
+		&:hover, &:focus, &:active, &.is-active
+			background-color: $accent1
+	&-acc-2
+		&:hover, &:focus, &:active, &.is-active
+			background-color: $accent2
+	&-acc-3
+		&:hover, &:focus, &:active, &.is-active
+			background-color: $accent3
+	&-wh
+		&:hover, &:focus, &:active, &.is-active
+			background-color: $white
+
+//hover border color
+.h-bc
+	transition: all 0.3s ease
+	&:hover, &:focus, &:active, &.is-active
+		transition: all 0.3s ease
+	&-1
+		&:hover, &:focus, &:active, &.is-active
+			border-color: $font1
+	&-2
+		&:hover, &:focus, &:active, &.is-active
+			border-color: $font2
+	&-3
+		&:hover, &:focus, &:active, &.is-active
+			border-color: $font3
+	&-acc-1
+		&:hover, &:focus, &:active, &.is-active
+			border-color: $accent1
+	&-acc-2
+		&:hover, &:focus, &:active, &.is-active
+			border-color: $accent2
+	&-acc-3
+		&:hover, &:focus, &:active, &.is-active
+			border-color: $accent3
+	&-wh
+		&:hover, &:focus, &:active, &.is-active
+			border-color: $white
+
+/* HOVER ITEM FX*/
+
+.h-fx-opener
+	position: relative
+	.h-fx-drop
+		display: none
+		position: absolute
+		top: 100%
+		left: -1.5rem
+		z-index: 1000
+	&:hover
+		.h-fx-opener
+			&:before
+				content: ""
+				position: absolute
+				top: 100%
+				left: 0
+				right: 0
+				height: 3rem
+		.h-fx-drop
+			display: block	
+
+/* HOVER ITEM FX MAIN EFFECT SCALE + TRANSITION*/
+.h-fx-item
+	overflow: hidden
+	&__img
+		transform: scale(1.01)
+		transition: transform 0.6s ease
+	&__text
+		.first-line
+			transform: translate3d(0, 3.5rem, 0)
+			transition: all 0.4s ease
+		.second-line
+			opacity: 0
+			transition: transform 0.4s ease, opacity 0.5s ease
+			transform: translate3d(0, 3.5rem, 0)
+	&:hover
+		.h-fx-item
+			&__img
+				transform: scale(1.05)
+			&__text
+				.first-line
+					transform: translate3d(0, 0rem, 0)
+				.second-line
+					opacity: 1
+					transform: translate3d(0, 0, 0)
+
+/* HOVER UNDERLINE FX*/
+
+.h-fx-underline
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		bottom: -1px
+		left: 0
+		right: 0
+		width: 100%
+		height: 2px
+		background-color: $font1
+		opacity: 0
+		transform: scaleX(0)
+		transition: all .3s cubic-bezier(.4,0,.2,1)
+	&:hover, &.is-active, &.active
+		//color: #fff
+		&:after
+			opacity: 1
+			transform: scaleX(1)
+			transition: all .3s cubic-bezier(.4,0,.2,1)
+	&-4
+		&:after
+			height: 4px		
+	&-5
+		&:after
+			height: 5px
+	&-10
+		&:after
+			height: 10px
+
+.h-fx-underline-color
+	&-1
+		&:after
+			background-color: $font1
+	&-2
+		&:after
+			background-color: $font2
+	&-3
+		&:after
+			background-color: $font3
+	&-acc-1
+		&:after
+			background-color: $accent1						
+	&-acc-2
+		&:after
+			background-color: $accent2
+	&-acc-3
+		&:after
+			background-color: $accent3
+	&-wh
+		&:after
+			background-color: $white
+
+/* HOVER FX OPACITY*/
+
+.h-fx-opacity
+	transition: all 0.3s ease-in-out
+	&:hover, &:focus, &:active, &.is-active
+		opacity: 0.5
+	&-1
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.1	
+	&-2
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.2
+	&-3
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.3
+	&-4
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.4
+	&-5
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.5
+	&-6
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.6
+	&-7
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.7
+	&-8
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.8
+	&-9
+		@extend .h-fx-opacity
+		&:hover, &:focus, &:active, &.is-active
+			opacity: 0.9
+
+/* HOVER FX SHADOW*/
+
+.h-fx-shadow
+	transition: all 0.3s ease-in-out
+	&:hover, &:focus, &:active, &.is-active
+		-webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.25)
+		-moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.25)
+		box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.25) 
+		
+/* HOVER FX GRAYSCALE*/
+
+.h-fx-gray
+	transition: filter 0.3s ease-in-out
+	-webkit-filter: grayscale(100%)
+	filter: grayscale(100%)
+	&:hover, &:focus, &:active, &.is-active
+		-webkit-filter: grayscale(0%)
+		filter: grayscale(0%)

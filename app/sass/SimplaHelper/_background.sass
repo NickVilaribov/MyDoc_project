@@ -1,0 +1,107 @@
+// -Background
+
+// BG COLOR
+.bgc
+	&-t
+		background-color: transparent
+	&-1
+		background-color: $bgc1
+	&-2
+		background-color: $bgc2
+	&-3
+		background-color: $bgc3
+	&-acc-1
+		background-color: $accent1
+	&-acc-2
+		background-color: $accent2
+	&-acc-3
+		background-color: $accent3	
+	&-wh
+		background-color: $white
+
+.bg-cc
+	background-size: cover
+	background-position: center
+
+// -BackFilter
+.bg-filter-after
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: rgba(0,0,0,0.35)
+
+.bg-filter-after
+	&-10
+		@extend .bg-filter-after
+		&:after
+			background: rgba(0,0,0,0.10)
+	&-20
+		@extend .bg-filter-after
+		&:after	
+			background: rgba(0,0,0,0.20)
+	&-30
+		@extend .bg-filter-after
+		&:after	
+			background: rgba(0,0,0,0.30)
+	&-40
+		@extend .bg-filter-after
+		&:after
+			background: rgba(0,0,0,0.40)
+	&-50
+		@extend .bg-filter-after
+		&:after	
+			background: rgba(0,0,0,0.50)
+	&-60
+		@extend .bg-filter-after
+		&:after	
+			background: rgba(0,0,0,0.60)
+	&-70
+		@extend .bg-filter-after
+		&:after
+			background: rgba(0,0,0,0.70)
+	&-80
+		@extend .bg-filter-after
+		&:after	
+			background: rgba(0,0,0,0.80)
+	&-90
+		@extend .bg-filter-after
+		&:after
+			background: rgba(0,0,0,0.90)
+	&-100
+		@extend .bg-filter-after
+		&:after	
+			background: rgba(0,0,0,1)
+
+
+.bg-filter-dark
+	background: rgba(0,0,0,0.35)
+	background-blend-mode: multiply
+	background-size: cover
+	background-position: center
+
+.bg-filter-dark
+	&-10
+		background: rgba(0,0,0,0.10)
+	&-20
+		background: rgba(0,0,0,0.20)
+	&-30
+		background: rgba(0,0,0,0.30)
+	&-40
+		background: rgba(0,0,0,0.40)
+	&-50
+		background: rgba(0,0,0,0.50)
+	&-60
+		background: rgba(0,0,0,0.60)
+	&-70
+		background: rgba(0,0,0,0.70)
+	&-80
+		background: rgba(0,0,0,0.80)
+	&-90
+		background: rgba(0,0,0,0.90)
+	&-100
+		background: rgba(0,0,0,1)

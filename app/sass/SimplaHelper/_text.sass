@@ -1,0 +1,112 @@
+/* TEXT */
+
+body			
+	h1, h2, h3, h4, h5, h6
+		margin: 0
+		padding: 0
+		line-height: 1.1
+	a
+		color: $font1 
+		transition: all 0.5s ease
+		&:hover, &:focus, &:active
+			color: $accent1
+			transition: all 0.5s ease
+			text-decoration: none 
+	p
+		margin-bottom: 0.625rem
+	*
+		outline: none !important
+
+.ff
+	&-1
+		font-family: $default-font
+	&-2
+		font-family: $second-font
+
+// FONTS SIZES
+
+@each $num, $str in $fz-map
+	.fz-#{$num}
+		font-size: $str
+
+// FONT WEIGHT
+
+.fw
+	&-100
+		font-weight: 100
+	&-200
+		font-weight: 200
+	&-300
+		font-weight: 300
+	&-400
+		font-weight: 400
+	&-500
+		font-weight: 500
+	&-600
+		font-weight: 600
+	&-700
+		font-weight: 700
+	&-800
+		font-weight: 800
+	&-900
+		font-weight: 900																												
+
+// LINE HEIGHT
+
+@each $num, $str in $lh-map
+	.lh-#{$num}
+		line-height: $str	
+
+// LETTER SPACING
+
+@each $num, $str in $ls-map
+	.ls-#{$num}
+		letter-spacing: $str				
+
+// FONT COLOR
+
+.fc 
+	&-1
+		color: $font1
+	&-2
+		color: $font2
+	&-3
+		color: $font3
+	&-acc-1
+		color: $accent1
+	&-acc-2
+		color: $accent2
+	&-acc-3
+		color: $accent3	
+	&-wh
+		color: $white	
+
+/* FLOATS */
+.fl
+	float: left
+.fr
+	float: right
+
+// -Text Transform
+.tt
+	&-u
+		text-transform: uppercase
+	&-l
+		text-transform: lowercase
+// -Text decoration
+.td
+	&-n
+		text-decoration: none !important
+	&-u
+		text-decoration: underline !important
+	&-o
+		text-decoration: overline !important
+	&-lh
+		text-decoration: line-through	!important						
+
+
+.ws-nw
+	white-space: nowrap
+
+.lst-none
+	list-style-type: none		

@@ -1,0 +1,180 @@
+@import "SimplaHelper/variables"
+@import "libs"
+@import "SimplaHelper/simpla"
+
+
+/** Custom styles**/
+.page-wrapper__bcg
+	background-image: url('../img/bcg_main.png')
+	background-size: inherit
+	background-repeat: repeat-y
+	z-index: -101
+	&#mainpage
+		background-image: url('../img/bcg_main.png')
+		background-size: inherit
+		background-repeat: repeat-y
+	&#otherpage
+		background-image: url('../img/bcg_second.png')
+		background-size: inherit
+		background-repeat: repeat-y
+	&#clearpage
+		background-image: url('../img/bcg_clear.png')
+		background-size: inherit
+		background-repeat: repeat-y			
+
+.products-list
+	column-count: 3
+	&__item
+		padding-right: 2rem
+
+.catalog-item
+	&:hover
+		.catalog-item__name
+			color: $accent1
+.article-item
+	&:hover
+		.article-item__name
+			color: $accent1	
+
+.parallax-window
+	min-height: 400px
+	background: transparent
+
+
+#msGallery
+	.fotorama__nav
+		text-align: left
+	.fotorama__thumb-border
+		border-color: $accent1
+		background-image: none
+	.fotorama__thumb
+		background-color: $white
+
+.product__tabs
+	.product-nav-tabs
+		border-bottom: 1px solid $font2
+		.nav-link
+			&.active
+				color: $accent1
+	.product-tab-content 
+		.tab-pane 
+			display: none	
+			&.active 
+				display: block
+			&#soft
+				a
+					display: table
+					position: relative
+					padding-left: 3rem
+					padding-top: 0.4rem
+					font-size: 1rem
+					margin-bottom: 1rem
+					&:before
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: 2rem
+						height: 2rem
+						background-size: 2rem 2rem
+						background-image: url('../img/icons/zip.svg')
+			&#docs
+				a
+					display: table
+					position: relative
+					padding-left: 3rem
+					padding-top: 0.4rem
+					font-size: 1rem
+					margin-bottom: 1rem
+					&:before
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: 2rem
+						height: 2rem
+						background-size: 2rem 2rem
+						background-image: url('../img/icons/pdf.svg')
+
+.search-form
+	&__wrapper
+		position: relative
+		width: 100%
+	&__line
+		width: 100%
+		padding: 0.75rem 3rem 0.75rem 2rem
+		font-size: 0.875rem
+		color: $font1
+		border: 1px solid #d0d0d0
+	&__button
+		position: absolute
+		top: 0
+		right: 0
+		font-size: 0.875rem
+		height: 100%
+		padding: 0.4rem 1.5rem 0.4rem 1.5rem
+		background-color: $accent1
+		color: $white
+		border-color: transparent
+		border: 1px solid #d0d0d0
+		transition: all 0.3s ease
+		&:hover
+			background-color: $font3
+
+.partfolio-item
+	&:hover
+		.partfolio-item__name
+			@extend .h-fc
+			color: $accent1		
+html body .bvi.bvi-panel
+
+html
+	body
+		.bvi.bvi-panel
+			z-index: 11 !important
+		.bvi-body[data-bvi-theme=white]
+			.hamburger-inner
+				background-color: black !important
+				&:before
+					background-color: black !important
+				&:after
+					background-color: black !important
+		.bvi-body[data-bvi-theme=black]
+			.hamburger-inner
+				background-color: white !important
+				&:before
+					background-color: white !important
+				&:after
+					background-color: white !important
+		.bvi-body[data-bvi-theme=blue]
+			.hamburger-inner
+				background-color: #063462 !important
+				&:before
+					background-color: #063462 !important
+				&:after
+					background-color: #063462 !important
+		.bvi-body[data-bvi-theme=brown]
+			.hamburger-inner
+				background-color: #4d4b43 !important
+				&:before
+					background-color: #4d4b43 !important
+				&:after
+					background-color: #4d4b43 !important
+		.bvi-body[data-bvi-theme=brown]
+			.hamburger-inner
+				background-color: #4d4b43 !important
+				&:before
+					background-color: #4d4b43 !important
+				&:after
+					background-color: #4d4b43 !important
+		.bvi-body[data-bvi-theme=green]
+			.hamburger-inner
+				background-color: #a9e44d !important
+				&:before
+					background-color: #a9e44d !important
+				&:after
+					background-color: #a9e44d !important																				
+/** End of custom styles**/
+
+
+@import "media"

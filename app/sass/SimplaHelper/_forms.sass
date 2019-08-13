@@ -1,0 +1,70 @@
+// FORMS
+.form
+	position: relative
+	input,textarea
+		// border-top: none
+		// border-right: none
+		// border-left: none
+		// border-bottom: 2px solid $font2
+		border: 1px solid $font3
+		padding-right: 1rem
+		padding-left: 1rem
+		border-radius: 0px
+		resize: none
+		background-color: transparent !important
+		&:focus
+			border-bottom: 2px solid $accent1 !important
+			background-color: transparent !important
+		&:required
+			&:valid
+				border-bottom: 2px solid green !important
+				background-color: transparent !important
+	@include placeholder
+		color: $font1
+
+	.form__success, .form__error    
+		display: none
+		position: absolute
+		z-index: 11
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		-webkit-transition: all 0.4s ease
+		-o-transition: all 0.4s ease
+		transition: all 0.4s ease
+		& ~ *
+			transition: all 0.4s ease
+		&.is-active
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			transition: all 0.4s ease
+			& ~ *
+				opacity: 0.5
+				filter: blur(5px)
+
+
+select
+	width: 100%
+	//height: 2.5rem
+	padding-left: 1rem
+	padding-top: 0.75rem
+	padding-bottom: 0.75rem
+	font-size: 0.875rem
+	padding-right: 1rem
+	-webkit-appearance: none
+	-moz-appearance: none
+	border-radius: 0
+	border-color: #D7D7D7
+	background: transparent
+	border-radius: 0
+	color: $font1
+	background: url("../img/select-ar.svg") 96% / 2% no-repeat transparent
+
+
+
+

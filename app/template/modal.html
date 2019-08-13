@@ -1,0 +1,19 @@
+<div class="modal__overlay"></div>
+<div class="modal__wrapper form_1 bgc-wh p-300 pos-r">
+		<div class="modal__close fz-200 fc-2 h-fx-opacity-5 cur-p"><i class="fal fa-times"></i></div>
+		<form class="form" id="form_1">
+			<div class="form__success"><span class="text-center fz-200 fc-1 ff-2">Спасибо! В ближайшее время мы свяжемся с Вами!</span></div>
+			<div class="form__error"><span class="text-center fz-200 ff-2" style="color: #E25353">Ваша заявка не отправлена. Попробуйте повторить позже.</span></div>
+			<h3 class="section-title ff-2 fz-250 pt-150 mb-300 pos-r dec-line-top dec-color-1">Свяжитесь с нами</h3>
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Contact form">
+			<input type="hidden" name="admin_email" value="info@balloon.by">
+			<input type="hidden" name="form_subject" value="Name of page">
+			<!-- END Hidden Required Fields -->
+			<input type="text" name="name" placeholder="Ваше имя *"  class="w-100p fc-1 fz-100 ptb-75 mb-125" required>
+			<input type="tel" name="phone" placeholder="Ваш телефон *"  class="w-100p fc-1 fz-100 ptb-75 mb-125 phone-masked" required>
+			<input type="email" name="email" placeholder="Ваш email *"  class="w-100p fc-1 fz-100 ptb-75 mb-125" required>
+			<textarea name="comments" id="comments" placeholder="Комментарий" rows="4"  class="w-100p fc-1 fz-100 ptb-75 mb-125"></textarea>
+			<button class="btn btn-bgc-wh btn-bc-1 h-bgc-2 h-fc-wh mt-200">отправить</button>
+		</form>
+	</div>

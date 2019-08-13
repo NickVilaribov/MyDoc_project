@@ -1,0 +1,62 @@
+/* PADDINGS & MARGINGS */
+
+@each $num, $str in $pm-map
+	.p-#{$num}
+		padding: $str
+	.pt-#{$num}
+		padding-top: $str	
+	.pb-#{$num}
+		padding-bottom: $str
+	.ptb-#{$num}
+		padding-top: $str
+		padding-bottom: $str
+	.pl-#{$num}
+		padding-left: $str
+	.pr-#{$num}
+		padding-right: $str
+	.plr-#{$num}
+		padding-left: $str
+		padding-right: $str
+
+@each $num, $str in $pm-map
+	.m-#{$num}
+		margin: $str
+	.mt-#{$num}
+		margin-top: $str	
+	.mb-#{$num}
+		margin-bottom: $str
+	.mtb-#{$num}
+		margin-top: $str
+		margin-bottom: $str
+	.ml-#{$num}
+		margin-left: $str
+	.mr-#{$num}
+		margin-right: $str
+	.mlr-#{$num}
+		margin-left: $str
+		margin-right: $str
+
+/* WIGHT & HEIGHT */
+
+@each $num, $str in $w-map
+	.w-#{$num}
+		width: $str
+
+
+@each $num, $str in $h-map
+	.h-#{$num}
+		height: $str
+
+@each $num, $str in $h-map
+	.mn-h-#{$num}
+		min-height: $str
+	.mx-h-#{$num}
+		max-height: $str
+
+@each $num, $str in $w-map
+	.mn-w-#{$num}
+		min-width: $str
+	.mx-w-#{$num}
+		max-width: $str
+
+

@@ -1,0 +1,348 @@
+
+/*==========  Desktop First  ==========*/
+// ≥1200px
++media-breakpoint-down(xl)
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	@each $num, $str in $pm-map
+		.p-lg-#{$num}
+			padding: $str
+		.pt-lg-#{$num}
+			padding-top: $str	
+		.pb-lg-#{$num}
+			padding-bottom: $str
+		.ptb-lg-#{$num}
+			padding-top: $str
+			padding-bottom: $str
+		.pl-lg-#{$num}
+			padding-left: $str
+		.pr-lg-#{$num}
+			padding-right: $str
+		.plr-lg-#{$num}
+			padding-left: $str
+			padding-right: $str
+
+	@each $num, $str in $pm-map
+		.m-lg-#{$num}
+			margin: $str
+		.mt-lg-#{$num}
+			margin-top: $str	
+		.mb-lg-#{$num}
+			margin-bottom: $str
+		.mtb-lg-#{$num}
+			margin-top: $str
+			margin-bottom: $str
+		.ml-lg-#{$num}
+			margin-left: $str
+		.mr-lg-#{$num}
+			margin-right: $str
+		.mlr-lg-#{$num}
+			margin-left: $str
+			margin-right: $str
+
+	@each $num, $str in $fz-map
+		.fz-lg-#{$num}
+			font-size: $str
+
+	@each $num, $str in $lh-map
+		.lh-lg-#{$num}
+			line-height: $str
+
+	@each $num, $str in $w-map
+		.w-lg-#{$num}
+			width: $str
+
+	@each $num, $str in $h-map
+		.h-lg-#{$num}
+			height: $str
+
+	@each $num, $str in $h-map
+		.mn-h-lg-#{$num}
+			min-height: $str
+		.mx-h-lg-#{$num}
+			max-height: $str
+
+	@each $num, $str in $w-map
+		.mn-w-lg-#{$num}
+			min-width: $str
+		.mx-w-lg-#{$num}
+			max-width: $str										
+													
+
+// ≥992px
++media-breakpoint-down(md)
+
+	@each $num, $str in $pm-map
+		.p-md-#{$num}
+			padding: $str
+		.pt-md-#{$num}
+			padding-top: $str	
+		.pb-md-#{$num}
+			padding-bottom: $str
+		.ptb-md-#{$num}
+			padding-top: $str
+			padding-bottom: $str
+		.pl-md-#{$num}
+			padding-left: $str
+		.pr-md-#{$num}
+			padding-right: $str
+		.plr-md-#{$num}
+			padding-left: $str
+			padding-right: $str
+
+	@each $num, $str in $pm-map
+		.m-md-#{$num}
+			margin: $str
+		.mt-md-#{$num}
+			margin-top: $str	
+		.mb-md-#{$num}
+			margin-bottom: $str
+		.mtb-md-#{$num}
+			margin-top: $str
+			margin-bottom: $str
+		.ml-md-#{$num}
+			margin-left: $str
+		.mr-md-#{$num}
+			margin-right: $str
+		.mlr-md-#{$num}
+			margin-left: $str
+			margin-right: $str
+
+	@each $num, $str in $fz-map
+		.fz-md-#{$num}
+			font-size: $str	
+
+	@each $num, $str in $lh-map
+		.lh-md-#{$num}
+			line-height: $str
+
+	@each $num, $str in $w-map
+		.w-md-#{$num}
+			width: $str
+
+	@each $num, $str in $h-map
+		.h-md-#{$num}
+			height: $str
+
+	@each $num, $str in $h-map
+		.mn-h-md-#{$num}
+			min-height: $str
+		.mx-h-md-#{$num}
+			max-height: $str	
+
+	@each $num, $str in $w-map
+		.mn-w-md-#{$num}
+			min-width: $str
+		.mx-w-md-#{$num}
+			max-width: $str																								
+
+// ≥992px
++media-breakpoint-down(sm)
+
+	.container-fluid
+		padding-left: 3rem !important
+		padding-right: 3rem !important
+
+	@each $num, $str in $pm-map
+		.p-sm-#{$num}
+			padding: $str
+		.pt-sm-#{$num}
+			padding-top: $str	
+		.pb-sm-#{$num}
+			padding-bottom: $str
+		.ptb-sm-#{$num}
+			padding-top: $str
+			padding-bottom: $str
+		.pl-sm-#{$num}
+			padding-left: $str
+		.pr-sm-#{$num}
+			padding-right: $str
+		.plr-sm-#{$num}
+			padding-left: $str
+			padding-right: $str
+
+	@each $num, $str in $pm-map
+		.m-sm-#{$num}
+			margin: $str
+		.mt-sm-#{$num}
+			margin-top: $str	
+		.mb-sm-#{$num}
+			margin-bottom: $str
+		.mtb-sm-#{$num}
+			margin-top: $str
+			margin-bottom: $str
+		.ml-sm-#{$num}
+			margin-left: $str
+		.mr-sm-#{$num}
+			margin-right: $str
+		.mlr-sm-#{$num}
+			margin-left: $str
+			margin-right: $str
+
+	@each $num, $str in $fz-map
+		.fz-sm-#{$num}
+			font-size: $str	
+
+	@each $num, $str in $lh-map
+		.lh-sm-#{$num}
+			line-height: $str
+
+	@each $num, $str in $w-map
+		.w-sm-#{$num}
+			width: $str
+
+	@each $num, $str in $h-map
+		.h-sm-#{$num}
+			height: $str
+
+	@each $num, $str in $h-map
+		.mn-h-sm-#{$num}
+			min-height: $str
+		.mx-h-sm-#{$num}
+			max-height: $str
+
+	@each $num, $str in $w-map
+		.mn-w-sm-#{$num}
+			min-width: $str
+		.mx-w-sm-#{$num}
+			max-width: $str											
+	.hours-office
+		background: url("../img/select-ar.svg") 96% / 2% no-repeat transparent		
+
+												
+	
+// ≥768x
++media-breakpoint-down(xs)
+	.container-fluid
+		padding-left: 1.5rem !important
+		padding-right: 1.5rem !important
+	.article_slider
+		&__item
+			position: relative
+			margin-bottom: 0.5rem
+			//padding-bottom: 54%
+			.slider-item__img
+			.slider-item__text
+				background-color: $bgc3
+				position: relative
+				padding-top: 1.5rem
+				padding-bottom: 1.5rem
+				.container
+					height: auto
+					padding-left: 1.5rem
+					padding-right: 1.5rem
+					.row
+						height: auto
+	.hours-office
+		background: url("../img/select-ar.svg") 96% / 2% no-repeat transparent						
+	//.expand-wrapper
+		//.expand-content
+			//display: none	
+
+	@each $num, $str in $pm-map
+		.p-xs-#{$num}
+			padding: $str
+		.pt-xs-#{$num}
+			padding-top: $str	
+		.pb-xs-#{$num}
+			padding-bottom: $str
+		.ptb-xs-#{$num}
+			padding-top: $str
+			padding-bottom: $str
+		.pl-xs-#{$num}
+			padding-left: $str
+		.pr-xs-#{$num}
+			padding-right: $str
+		.plr-xs-#{$num}
+			padding-left: $str
+			padding-right: $str
+
+	@each $num, $str in $pm-map
+		.m-xs-#{$num}
+			margin: $str
+		.mt-xs-#{$num}
+			margin-top: $str	
+		.mb-xs-#{$num}
+			margin-bottom: $str
+		.mtb-xs-#{$num}
+			margin-top: $str
+			margin-bottom: $str
+		.ml-xs-#{$num}
+			margin-left: $str
+		.mr-xs-#{$num}
+			margin-right: $str
+		.mlr-xs-#{$num}
+			margin-left: $str
+			margin-right: $str
+
+	@each $num, $str in $fz-map
+		.fz-xs-#{$num}
+			font-size: $str		
+
+
+	@each $num, $str in $lh-map
+		.lh-xs-#{$num}
+			line-height: $str
+
+	@each $num, $str in $w-map
+		.w-xs-#{$num}
+			width: $str
+
+	@each $num, $str in $h-map
+		.h-xs-#{$num}
+			height: $str						
+	
+	@each $num, $str in $h-map
+		.mn-h-xs-#{$num}
+			min-height: $str
+		.mx-h-xs-#{$num}
+			max-height: $str
+
+	@each $num, $str in $w-map
+		.mn-w-xs-#{$num}
+			min-width: $str
+		.mx-w-xs-#{$num}
+			max-width: $str			
+	
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+	.col-five
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+	
+
+// ≤768px
++media-breakpoint-up(md)
+	.col-sm-five
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+	
+
+// ≤992px
++media-breakpoint-up(lg)
+	.col-md-five
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+// ≤1200px
++media-breakpoint-up(xl)
+	.col-lg-five
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+
+	

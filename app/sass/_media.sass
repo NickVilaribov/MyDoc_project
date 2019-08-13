@@ -1,0 +1,60 @@
+
+/*==========  Desktop First  ==========*/
+// ≥1200px
++media-breakpoint-down(xl)
+// ≥1200px
++media-breakpoint-down(lg)
+// ≥992px
++media-breakpoint-down(md)
+// ≥992px
++media-breakpoint-down(sm)
+	.products-list
+		column-count: 2
+		&__item
+			padding-right: 2rem
+	.product__tabs
+		.product-nav-tabs
+			padding-bottom: 1rem
+			border-bottom: 1px solid $font2
+			.nav-link
+				padding: 0
+				margin-right: 1.5rem
+	
+				
+// ≥768x
++media-breakpoint-down(xs)
+	.products-list
+		column-count: 1
+		&__item
+			padding-right: 0rem
+
+	.page-wrapper__bcg
+		background-image: url('../img/bcg_main_mobile.png')
+		background-size: cover
+		background-repeat: repeat-y
+		&#mainpage
+			background-image: url('../img/bcg_main_mobile.png')
+			background-size: cover
+			background-repeat: repeat-y
+		&#otherpage
+			background-image: url('../img/bcg_second_mobile.png')
+			background-size: cover
+			background-repeat: repeat-y
+		&#clearpage
+			background-image: url('../img/bcg_clear_mobile.png')
+			background-size: cover
+			background-repeat: repeat-y		
+	
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+// ≤768px
++media-breakpoint-up(md)
+// ≤992px
++media-breakpoint-up(lg)
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+	

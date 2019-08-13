@@ -1,0 +1,350 @@
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	letter-spacing: 0.4px
+	&.noscroll 
+		height: 100%
+		width: 100%
+		position: fixed
+		background-color: $white
+		overflow: hidden
+	.page-wrapper
+		max-width: 1536px
+	
+
+.header
+	&--v2
+		.title-slide
+			flex: 1
+			//background: rgba(0,0,0,0.35)
+			//background-blend-mode: multiply
+			background-size: cover
+			background-position: center
+	&--v3
+		.nav-bar
+			top: 0
+			left: 0
+			right: 0
+		.title-slide
+			flex: 1
+	&--shadow
+		position: relative
+		-webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05)
+		-moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05)
+		box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05)
+.parralax-window
+	z-index: -100
+	
+.expand-wrapper
+	&.opened
+		.expand-opener
+			transform: rotate(180deg)
+	.expand-content
+		display: none			
+
+.accordion-wrapper
+	.accordion-content
+		display: none
+	&.opened
+		.accordion-opener
+			transform: rotate(180deg)
+
+.mobile-navigation
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	overflow-y: auto
+	z-index: 11
+	&__body
+		flex: 1
+		overflow-y: auto			
+
+.nav-bar--scroll
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 11
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+	transform: translateY(-150%)
+	transition: transform 0.15s ease
+	&.is-active
+		transform: translateY(0)	
+
+
+// OTHERPAGE
+.otherpage-content
+	.content-wrapper, .product__text
+		h2
+			font-family: $second-font
+			font-size: 2rem
+			margin-top: 2rem
+			margin-bottom: 1.5rem
+		h3
+			font-family: $second-font
+			font-size: 1.5rem
+			margin-top: 2rem
+			margin-bottom: 1.5rem
+		h4
+			font-family: $second-font
+			font-size: 1.25rem
+			margin-top: 2rem
+			margin-bottom: 1.5rem
+		h5
+			font-family: $second-font
+			font-size: 1.125rem
+			margin-top: 2rem
+			margin-bottom: 1.5rem		
+		p
+			margin-bottom: 1rem
+			strong, b
+				font-weight: 600	 
+		ul, ol
+			padding-left: 1.25rem
+			margin-bottom: 1.5rem
+		li
+			margin-bottom: 0.5rem		
+		a
+			text-decoration: underline
+			color: $accent1		
+		blockquote
+			margin-top: 2rem
+			padding-top: 2rem
+			padding-bottom: 2rem
+			margin-bottom: 2rem
+			padding-left: 3rem
+			@extend .dec-line-left
+			@extend .dec-color-acc-1
+			p
+				margin-bottom: 0 
+table
+	width: 100%
+	margin-top: 2rem
+	p
+		margin-bottom: 0rem !important
+	thead
+		tr
+			&:first-child
+				background-color: $bgc3
+	tr
+		td,th
+			border-bottom: none
+		td
+			&:first-child
+				width: 50%	
+		td,th
+			padding-top: 0.75rem
+			padding-bottom: 0.75rem
+			padding-left: 1rem
+			padding-right: 1rem
+			border-bottom: 1px solid $font3
+			strong
+				font-family: $second-font
+			&:last-child
+				//text-align: right
+	&.table-second
+		width: 100%
+		margin-top: 2rem
+		p
+			margin-bottom: 0rem !important
+		thead
+			tr
+				&:first-child
+					background-color: $bgc3
+		tr
+			td,th
+				border-bottom: none
+			td
+				&:first-child
+					width: 50%	
+			td,th
+				padding-top: 0.75rem
+				padding-bottom: 0.75rem
+				padding-left: 1rem
+				padding-right: 1rem
+				border: 1px solid $font3
+				strong
+					font-family: $second-font
+				&:last-child
+					//text-align: right			
+
+
+
+// CAROUSELS CUSTOM STYLES
+body
+	.owl-carousel
+		.owl-dots
+			text-align: center
+			margin-top: 0
+			.owl-dot
+				margin: 4px
+				span
+					display: block
+					width: 0.5rem
+					height: 0.5rem
+					border-radius: 100%
+					background: $font2
+					opacity: 0.5
+					transition: all 0.4s ease
+				&.active
+					span
+						opacity: 1
+
+.title-slide__image
+	opacity: 0
+
+// SELECT CUSTOM
+
+.hours-office
+	width: 100%
+	//height: 2.5rem
+	padding-left: 1rem
+	padding-top: 0.75rem
+	padding-bottom: 0.75rem
+	font-size: 0.875rem
+	padding-right: 1rem
+	-webkit-appearance: none
+	-moz-appearance: none
+	border-radius: 0
+	border-color: #D7D7D7
+	background: transparent
+	border-radius: 0
+	color: $font1
+	background: url("../img/select-ar.svg") 96% / 4% no-repeat transparent
+
+// COOKIES
+.cookieBlock
+	display: none
+	z-index: 20
+	position: fixed
+	margin-left: 2rem
+	bottom: 2rem
+	right: 2rem
+	text-align: center
+	max-width: 420px
+	padding: 1.5rem 2rem
+	-webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.3)
+	-moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.3)
+	box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.3)
+
+//TABS
+.tabs-section
+	.tabs_nav
+		//border-bottom: 1px solid $font2
+		.nav-item
+			.nav-link
+				&.active
+					//color: $accent1
+	.tabs-content
+		padding-top: 1rem
+		padding-bottom: 1rem
+		background: $bgc3
+		padding-left: 1rem
+		padding-right: 1rem	 
+		.tab-pane 
+			display: none
+			&.active 
+				display: block
+		a
+			color: $accent1
+			text-decoration: underline
+			cursor: pointer		
+
+.otherpage-content
+	a
+		&.gallery_item
+			color: $font1
+
+// PAGGINATION
+.pagination
+	padding: 0
+	margin: 0
+	&__item
+		display: inline-block
+		border: 1px solid $font3
+		color: $font2
+		width: 2.25rem
+		height: 2.25rem
+		position: relative
+		transition: all 0.3s ease
+		&.is-active
+			border: 1px solid $accent1
+			a
+				color: $accent1 !important
+		&:hover
+			border: 1px solid $accent1
+			a
+				color: $accent1 !important
+		a
+			position: absolute
+			text-decoration: none !important
+			width: 2.25rem
+			height: 2.25rem
+			display: flex
+			align-items: center
+			justify-content: center
+			color: $font2 !important
+			transition: all 0.3s ease
+
+//SLIDER
+
+.article_slider
+	&__item
+		position: relative
+		margin-bottom: 1rem
+		.slider-item__img
+		.slider-item__text
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			.container
+				height: 100%
+				padding-left: 3rem
+				padding-right: 3rem
+				.row
+					height: 100%
+					align-items: center
+					justify-content: flex-end
+	.owl-nav
+		position: absolute
+		justify-content: space-between
+		display: flex
+		width: 100%
+		margin-top: 0
+		top: calc(50% - 2.5rem)
+		padding: 0rem 1rem	
+		.owl-prev
+			width: 2.25rem
+			height: 2.25rem
+			position: relative
+			background-color: $accent1 !important
+			@extend .h-fx-shadow
+			span
+				color: #fff
+				font-size: 2rem	
+				position: absolute
+				top: -0.5rem
+				left: 0.75rem		
+		.owl-next
+			width: 2.25rem
+			height: 2.25rem
+			position: relative
+			background-color: $accent1 !important
+			@extend .h-fx-shadow
+			span
+				color: #fff
+				font-size: 2rem	
+				position: absolute
+				top: -0.5rem
+				right: 0.75rem		
+
+

@@ -1,0 +1,75 @@
+/* BUTTONS */
+
+.btn
+	font-size: 0.875rem
+	font-family: $default-font
+	font-weight: 500
+	text-decoration: none
+	padding: 0.9rem 2.5rem 1rem 2.5rem
+	border-radius: 0
+	-webkit-transition: all 250ms ease-in-out
+	transition: all 250ms ease-in-out
+	&:hover
+		-webkit-transition: all 250ms ease-in-out
+		transition: all 250ms ease-in-out
+		text-decoration: none
+	/* button background colors */
+	&-bgc
+		&-t
+			background-color: transparent
+		&-1
+			background-color: $font1
+		&-2
+			background-color: $font2
+		&-3
+			background-color: $font3
+		&-acc-1
+			background-color: $accent1
+		&-acc-2
+			background-color: $accent2
+		&-acc-3
+			background-color: $accent3	
+		&-wh
+			background-color: $white
+	&-bc
+		&-t
+			border-color: transparent
+		&-1
+			border-color: $font1
+		&-2
+			border-color: $font2
+		&-3
+			border-color: $font3
+		&-acc-1
+			border-color: $accent1
+		&-acc-2
+			border-color: $accent2
+		&-acc-3
+			border-color: $accent3	
+		&-wh
+			border-color: $white		
+	&--border
+		border: 1px solid $font1
+		&-2
+			border: 2px solid $font1
+		&-3
+			border: 3px solid $font1
+	&--noborder
+		border: none			
+
+
+
+
+.btn-arrow
+	display: flex
+	align-items: center
+	font-size: 0.875rem
+	span
+		padding-bottom: 0.1rem
+	i
+		font-size: 1.25rem
+		margin-left: 0.5rem
+		transition: all 0.3s ease
+	&:hover, &:focus, &:active
+		i
+			transform: translate3d(0.5rem, 0, 0)
