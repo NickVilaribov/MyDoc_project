@@ -45,7 +45,10 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/popper.js/dist/umd/popper.js',
 		'app/libs/bootstrap/dist/js/bootstrap.min.js',
+
+		//'app/libs/bootstrap/dist/js/bootstrap.bundle.js',
 		//'app/libs/mixitup/dist/mixitup.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
 		//'app/libs/jqBootstrapValidation/dist/jqBootstrapValidation-1.3.7.min.js',

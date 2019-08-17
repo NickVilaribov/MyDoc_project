@@ -1,7 +1,7 @@
 //= template/MyDoc_temp/head.html
 
 <body class="lh-14 ff-1 fc-1 d-block d-sm-flex1 justify-content-center">
-	<div class="page-wrapper1">
+	<div class="page-wrapper">
 	//= template/MyDoc_temp/preloader.html
 	//= template/MyDoc_temp/header_v2.html
 	//= template/MyDoc_temp/mobile-navigation.html
@@ -177,6 +177,116 @@
 								</tr>
 							</tbody>
 						</table>
+						<h3>Alerts</h3>
+						<div class="alert alert-primary" role="alert">
+						  This is a primary alert—check it out!
+						</div>
+						<div class="alert alert-secondary" role="alert">
+						  This is a secondary alert—check it out!
+						</div>
+						<div class="alert alert-success" role="alert">
+						  This is a success alert—check it out!
+						</div>
+						<div class="alert alert-danger" role="alert">
+						  This is a danger alert—check it out!
+						</div>
+						<div class="alert alert-warning" role="alert">
+						  This is a warning alert—check it out!
+						</div>
+						<div class="alert alert-info" role="alert">
+						  This is a info alert—check it out!
+						</div>
+						<div class="alert alert-light" role="alert">
+						  This is a light alert—check it out!
+						</div>
+						<div class="alert alert-dark" role="alert">
+						  This is a dark alert—check it out!
+						</div>
+						<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+						  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						    <span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<h3>Badges</h3>
+						<h1>Example heading <span class="badge badge-secondary">New</span></h1>
+						<h2>Example heading <span class="badge badge-secondary">New</span></h2>
+						<h3>Example heading <span class="badge badge-secondary">New</span></h3>
+						<h4>Example heading <span class="badge badge-secondary">New</span></h4>
+						<h5>Example heading <span class="badge badge-secondary">New</span></h5>
+						<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+						<h3></h3>
+						<h3>Button</h3>
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-danger">Danger</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-info">Info</button>
+						<button type="button" class="btn btn-light">Light</button>
+						<button type="button" class="btn btn-dark">Dark</button>
+						<button type="button" class="btn btn-outline-primary">Primary</button>
+						<button type="button" class="btn btn-outline-secondary">Secondary</button>
+						<button type="button" class="btn btn-outline-success">Success</button>
+						<button type="button" class="btn btn-outline-danger">Danger</button>
+						<button type="button" class="btn btn-outline-warning">Warning</button>
+						<button type="button" class="btn btn-outline-info">Info</button>
+						<button type="button" class="btn btn-outline-dark">Dark</button>
+						<h3>Button group</h3>
+						<div class="btn-group" role="group" aria-label="Basic example">
+						  <button type="button" class="btn btn-secondary">Left</button>
+						  <button type="button" class="btn btn-secondary">Middle</button>
+						  <button type="button" class="btn btn-secondary">Right</button>
+						</div>
+						<h3>Dropdown</h3>
+						<div class="dropdown">
+						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Dropdown button
+						  </button>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <a class="dropdown-item" href="#">Action</a>
+						    <a class="dropdown-item" href="#">Another action</a>
+						    <a class="dropdown-item" href="#">Something else here</a>
+						  </div>
+						</div>
+						<h3>Input group</h3>
+						<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="basic-addon1">@</span>
+					  </div>
+					  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group mb-3">
+					  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					  <div class="input-group-append">
+					    <span class="input-group-text" id="basic-addon2">@example.com</span>
+					  </div>
+					</div>
+
+					<label for="basic-url">Your vanity URL</label>
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+					  </div>
+					  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+					</div>
+
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text">$</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+					  <div class="input-group-append">
+					    <span class="input-group-text">.00</span>
+					  </div>
+					</div>
+
+					<div class="input-group">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text">With textarea</span>
+					  </div>
+					  <textarea class="form-control" aria-label="With textarea"></textarea>
+					</div>
 						<!-- begin Gallery -->
 						<div class="Gallery">
 							<h3>Галерея</h3>
@@ -270,9 +380,9 @@
 										<span class="ml-50">Радио</span>
 									</div>
 									<!-- end Checkbox and radio btn -->
-									<button class="btn btn--noborder btn-bgc-acc-1 cur-p fc-wh h-fc-wh h-fx-shadow fz-875 ptb-75 d-inline-block mt-100">Oтправить</button>
-									<button class="btn btn--noborder btn-bgc-acc-1 cur-p fc-wh h-fc-wh h-fx-shadow fz-875 ptb-75 d-inline-block mt-100" style="background-color: red;">Oтправить</button>
-									<button class="btn btn--noborder btn-bgc-acc-1 cur-p fc-wh h-fc-wh h-fx-shadow fz-875 ptb-75 d-inline-block mt-100" style="background-color: green;">Oтправить</button>
+									<button class="s-btn s-btn--noborder s-btn-bgc-acc-1 cur-p fc-wh h-fc-wh h-fx-shadow fz-875 ptb-75 d-inline-block mt-100">Oтправить</button>
+									<button class="s-btn s-btn--noborder s-btn-bgc-acc-1 cur-p fc-wh h-fc-wh h-fx-shadow fz-875 ptb-75 d-inline-block mt-100" style="background-color: red;">Oтправить</button>
+									<button class="s-btn s-btn--noborder s-btn-bgc-acc-1 cur-p fc-wh h-fc-wh h-fx-shadow fz-875 ptb-75 d-inline-block mt-100" style="background-color: green;">Oтправить</button>
 								</form>
 							</div>
 						</div>

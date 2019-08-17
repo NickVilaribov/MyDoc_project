@@ -1,5 +1,6 @@
 $(function() {
   //VARIABLES
+  //$('.dropdown-toggle').dropdown()
 
   //NICE SELECT
   //$('.niceselect').niceSelect();
