@@ -1,0 +1,26 @@
+//TABS
+.tabs-section
+	.tabs_nav
+		//border-bottom: 1px solid $font2
+		.nav-item
+			.nav-link
+				&.disabled
+					opacity: 0.4
+					@extend .h-fc-none
+					@extend .h-fx-underline-none
+				&.active
+					//color: $accent1
+	.tabs-content
+		padding-top: 1rem
+		padding-bottom: 1rem
+		background: $bgc3
+		padding-left: 1rem
+		padding-right: 1rem	 
+		.tab-pane 
+			display: none
+			&.active 
+				display: block
+		a
+			color: $accent1
+			text-decoration: underline
+			cursor: pointer		

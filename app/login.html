@@ -1,0 +1,69 @@
+//= template/MyDoc_temp/head.html
+
+<body class="lh-14 ff-1 fc-1 d-block d-sm-flex1 justify-content-center">
+	<div class="page-wrapper1">
+	//= template/MyDoc_temp/preloader.html
+	//= template/MyDoc_temp/header_v2.html
+	//= template/MyDoc_temp/mobile-navigation.html
+	<div class="content-wrapper pt-md-200">
+		<div class="container-fluid">
+			<div class="row flex-column-reverse flex-md-row">
+				<!-- begin SIDEBAR -->
+				<div class="col-12 col-md-3 sidebar">
+					<div class="sideber-wrapper">
+						//= template/MyDoc_temp/sidebar-menu.html
+						//= template/MyDoc_temp/sidebar-contacts.html
+						//= template/MyDoc_temp/banners-section.html
+					</div>
+				</div>
+				<!-- end SIDEBAR -->
+				<!-- start CONTENT -->
+				<div class="col-12 col-md-9 otherpage-content pb-300 pb-md-25 fz-1125 fz-sm-1125">
+					//= template/MyDoc_temp/breadcrumb.html
+					<h1 class="ff-2 fz-200 pt-150 mb-200 dec-line-top-medium dec-color-acc-1">Авторизация</h1>
+					<div class="row">
+						<div class="col-12 esia-login-section mb-200">
+							<h2 class="ff-2 fz-150 mb-200">Вход через Госуслуги</h2>
+							<div class="mb-100">
+								<img src="img/esia.svg" alt="госуслуги" class="w-800 h-auto">
+							</div>
+							<a href="#" target="_blank" class="s-btn d-inline-block ptb-75 fc-wh fz-875 h-fc-wh h-fx-shadow bgc-acc-1 mt-100 text-center">Войти</a>
+						</div>
+						<div class="col-12 col-md-6 mfc-login-section">
+							<div class="sidebar-menu__item expand-wrapper">
+								<div class="expand-opener-btn cur-p h-fc-acc-1 ff-2 fz-125 ptb-75 fc-1 d-flex align-items-center">
+									<span class="fz-150 ff-2 mr-200">Вход через систему МФЦ</span>
+									<span class="expand-opener d-flex align-self-center"><i class="far fa-chevron-down"></i></span>
+								</div>
+								<div class="p-0 mb-0 mr-0 expand-content">
+									<p class="fz-875 mb-300 mt-200">Вы также можете использовать форму входа через систему авторизации МФЦ, если у Вас есть выданные администратором системы логин и пароль</p>
+									<form class="form form_1 pos-r" id="form_1">
+										<input type="text" name="login" placeholder="Логин"  class="w-100p fc-1 fz-875 ptb-75 mb-125" required>
+										<input type="password" name="password" placeholder="Пароль"  class="w-100p fc-1 fz-875 ptb-75 mb-125" required>
+										<!-- begin Checkbox and radio btn -->
+										<div class="mb-100">
+											<input type="checkbox" value="None" id="ch" name="check"/>
+											<span class="ml-50 fz-875">Запомнить меня</span>
+										</div>
+										<!-- end Checkbox and radio btn -->
+										<button class="s-btn s-btn--noborder s-btn-bgc-acc-1 cur-p fc-wh h-fc-wh h-fx-shadow fz-875 ptb-75 d-inline-block mt-100">Войти</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end CONTENT -->
+			</div>
+		</div>
+	</div>
+	//= template/MyDoc_temp/footer.html
+	//= template/MyDoc_temp/cookie-section.html
+	
+	<!-- start SCRIPTS -->
+	<script src="js/scripts.min.js"></script>
+	<!-- end SCRIPTS -->
+	</div>	
+</body>
+</html>
+
