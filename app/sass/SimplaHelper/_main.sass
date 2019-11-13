@@ -88,32 +88,32 @@ body
 			font-family: $second-font
 			font-size: 2.25rem
 			margin-top: 2rem
-			margin-bottom: 1.5rem
+			margin-bottom: 2rem
 		h2
 			font-family: $second-font
 			font-size: 2rem
 			margin-top: 2rem
-			margin-bottom: 1.5rem
+			margin-bottom: 2rem
 		h3
 			font-family: $second-font
 			font-size: 1.5rem
 			margin-top: 2rem
-			margin-bottom: 1.5rem
+			margin-bottom: 2rem
 		h4
 			font-family: $second-font
 			font-size: 1.25rem
 			margin-top: 2rem
-			margin-bottom: 1.5rem
+			margin-bottom: 2rem
 		h5
 			font-family: $second-font
 			font-size: 1.125rem
 			margin-top: 2rem
-			margin-bottom: 1.5rem
+			margin-bottom: 2rem
 		h5
 			font-family: $second-font
 			font-size: 1rem
 			margin-top: 2rem
-			margin-bottom: 1.5rem					
+			margin-bottom: 2rem					
 		p
 			margin-bottom: 1rem
 			strong, b
@@ -125,7 +125,10 @@ body
 			margin-bottom: 0.5rem		
 		a
 			text-decoration: underline
-			color: $accent1		
+			color: $accent1
+		.s-btn
+			text-decoration: inherit
+			color: $white		
 		blockquote
 			margin-top: 2rem
 			padding-top: 2rem
@@ -246,28 +249,6 @@ body
 	-moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.3)
 	box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.3)
 
-//TABS
-.tabs-section
-	.tabs_nav
-		//border-bottom: 1px solid $font2
-		.nav-item
-			.nav-link
-				&.active
-					//color: $accent1
-	.tabs-content
-		padding-top: 1rem
-		padding-bottom: 1rem
-		background: $bgc3
-		padding-left: 1rem
-		padding-right: 1rem	 
-		.tab-pane 
-			display: none
-			&.active 
-				display: block
-		a
-			color: $accent1
-			text-decoration: underline
-			cursor: pointer		
 
 .otherpage-content
 	a
@@ -359,4 +340,20 @@ body
 				top: -0.5rem
 				right: 0.75rem		
 
+//CARD ITEM
 
+.card__item
+	h2
+		@extend .ff-2, .fz-150, .mb-200, .pt-100, .dec-line-top-short, .dec-color-acc-1
+	h3
+		@extend .ff-2, .fz-100, .mb-50
+	p
+		@extend .fz-875, .mb-25
+	a
+		@extend .d-inline-block, .fz-875, .mb-25
+	img	
+		@extend .w-100p, .h-auto, .mb-100
+	ul
+		@extend .pl-100, .fz-100, .mb-200
+		li
+			@extend .mb-25

@@ -260,6 +260,9 @@ $(function() {
     }
   });
 
+  $(".s-btn").filter(".disabled").click(function(event){
+    event.preventDefault();
+  });
 
   //SCROLL UP FADE-IN FUNCTION
   (function scrolldirection() {
